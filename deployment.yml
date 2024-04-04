@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: complete-production-e2e-pipeline-deployment
+  labels:
+    app: complete-production-e2e-pipeline
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: complete-production-e2e-pipeline
+  template:
+    metadata:
+      labels:
+        app: complete-production-e2e-pipeline
+    spec:
+      containers:
+      - name: complete-production-e2e-pipeline
+        image: kummer/complete-production-e2e-pipeline:1.0.0-9
+        ports:
+        - containerPort: 8080
