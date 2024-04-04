@@ -5,7 +5,7 @@ metadata:
   labels:
     app: complete-production-e2e-pipeline
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: complete-production-e2e-pipeline
