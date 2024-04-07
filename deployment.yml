@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: complete-production-e2e-pipeline
-        image: kummer/complete-prodcution-e2e-pipeline:1.0.0-38
+        image: kummer/complete-prodcution-e2e-pipeline:1.0.0-39
         ports:
         - containerPort: 8080
